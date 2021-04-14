@@ -22,15 +22,27 @@
   <meta name="theme-color" content="#fafafa">
 </head>
 
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'hello/style.css' %}">
+
 <body>
 
   <!-- Add your site or application content here -->
-  <h1>Patient Calendar App</h1>
-  <form action="results">
-    <div class="button">
-      <button type="submit">Populate Physician List</button>
-    </div>
-  </form>
+  <div class="row">
+   <div class="column">
+     <h1>Physicians</h1>
+     <ul>
+       {% for physician in physicians %}
+           <li>{{ physician }}</li>
+       {% endfor %}
+     </ul>
+   </div>
+   <div class="column">
+     <h1>Calendar</h1>
+   </div>
+  </div>
+
 </body>
 
 </html>
