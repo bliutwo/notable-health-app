@@ -1,3 +1,15 @@
+# Notable Health App
+
+This repo will contain my attempt to implement whatever Notable Health
+asks me to implement.
+
+[Heroku App link](https://stormy-wave-38877.herokuapp.com/)
+
+This uses the skeleton repo from Heroku, found [here](https://github.com/heroku/python-getting-started),
+whose README contains useful documentation for pushing to the Heroku "dyno."
+
+That README is as follows:
+
 # Python: Getting Started
 
 A barebones Django app, which can easily be deployed to Heroku.
